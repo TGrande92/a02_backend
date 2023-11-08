@@ -6,7 +6,7 @@ Requires=mysql.service
 [Service]
 WorkingDirectory=/home/a02/backend
 Type=simple
-User=backend
+User=a02
 ExecStart=/usr/local/bin/gunicorn wsgi:app -b 0.0.0.0:5000
 Restart=always
 
